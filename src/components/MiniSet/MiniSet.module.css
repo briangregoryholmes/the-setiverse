@@ -1,0 +1,46 @@
+.miniSet {
+  position: absolute;
+  bottom: 0px;
+  width: 60px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  cursor: pointer !important;
+  pointer-events: auto;
+  /* outline: solid 1px hsl(0, 1%, 40%); */
+}
+.glow {
+  position: absolute;
+  z-index: -3;
+  width: 0%;
+  height: 90%;
+
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%);
+}
+
+.miniCard {
+  width: 60px;
+  max-height: 40px;
+  pointer-events: none;
+  /* outline: solid 1px red; */
+}
+.miniCard > :first-child {
+  border: solid 1px rgba(243, 236, 217, 0.249);
+  box-shadow: 0 0 3px 0 hsla(0, 3%, 20%, 0.2);
+}
+.miniset > :first-child {
+  justify-self: flex-end;
+  align-self: flex-end;
+}
+
+.miniSet > :nth-child(2) {
+  z-index: 1;
+}
+
+.miniSet > :nth-child(3) {
+  z-index: 2;
+}

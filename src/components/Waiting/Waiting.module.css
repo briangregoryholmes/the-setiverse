@@ -1,0 +1,48 @@
+.playerStatus {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: solid 1px white;
+}
+
+.waiting {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.playerStatus:last-of-type {
+  border-bottom: none !important;
+}
+
+.ready {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.loadingSpinner {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  border-top: 2px solid #000;
+  animation: spin 1s linear infinite;
+}
+
+/* @keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} */

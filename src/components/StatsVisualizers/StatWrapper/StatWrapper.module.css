@@ -1,0 +1,16 @@
+.wrapper {
+  width: 100%;
+  border: solid 1px var(--border-color);
+  border-radius: 10px;
+  background-color: var(--card-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: fit-content;
+}
+
+.wrapper h3 {
+  font-size: clamp(0.9rem, 2vw, 1.25rem);
+  text-align: center;
+  margin: 8px;
+}

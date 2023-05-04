@@ -1,0 +1,39 @@
+.display {
+  /* position: absolute;
+  left: 20px;
+  bottom: 20px; */
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 10px;
+  margin-top: 10px;
+  height: 40px;
+  align-items: center;
+  max-width: 90%;
+  /* outline: solid 1px rgb(255, 0, 0); */
+}
+.wrapper {
+  width: 60px;
+  height: 100%;
+  /* outline: solid 1px yellow; */
+}
+
+.name {
+  text-align: center;
+}
+
+.score {
+  background-color: hsl(148, 60%, 66%);
+  width: 4px;
+  height: 20px;
+  border-radius: 20px;
+}
+
+.circle {
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}

@@ -1,0 +1,19 @@
+.main {
+  /* border: solid 1px red; */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+
+  width: 100%;
+}
+
+.buttonWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  /* outline: solid 1px yellow; */
+  width: min(80%, 400px);
+}

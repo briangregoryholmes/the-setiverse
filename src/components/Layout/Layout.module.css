@@ -1,0 +1,23 @@
+.layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  height: 100%;
+  overflow: hidden !important;
+  position: absolute;
+  pointer-events: none;
+}
+
+.section {
+  position: absolute;
+  width: 100vw;
+  height: 100%;
+  margin-top: 60px;
+  padding: 34px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden !important;
+  pointer-events: none;
+}

@@ -1,0 +1,42 @@
+.rules {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  font-size: 0.8rem;
+  list-style: none;
+  padding: 1rem;
+  margin-top: -0.75rem;
+}
+
+.emphasis {
+  color: var(--primary-color);
+  background-color: var(--card-color);
+  line-height: 0.9rem;
+  font-size: 0.9rem;
+  padding: 0;
+  margin: 0;
+  padding-top: 0.34rem;
+  padding-left: 0.42rem;
+  padding-right: 0.42rem;
+  padding-bottom: 0.1rem;
+  text-align: center;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  border: solid 1px gray;
+}
+
+.primary {
+  color: var(--tertiary-color);
+  text-align: center;
+  font-size: 1rem;
+  width: 90%;
+  align-self: center;
+}
+
+.features {
+  display: flex;
+  justify-content: space-around;
+}

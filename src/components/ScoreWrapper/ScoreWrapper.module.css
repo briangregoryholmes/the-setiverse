@@ -1,0 +1,10 @@
+.wrapper {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 10px;
+  /* outline: solid 1px yellow; */
+}

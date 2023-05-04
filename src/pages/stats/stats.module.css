@@ -1,0 +1,10 @@
+.wrapper {
+  width: min(90%, 700px);
+  height: 60%;
+  gap: 15px;
+
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  grid-template-rows: masonry;
+}

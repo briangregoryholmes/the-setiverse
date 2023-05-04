@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap');
+.cardGroup {
+  display: flex;
+  gap: 10px;
+}
+
+.wrapper {
+  width: fit-content;
+  width: 600px;
+  max-width: 80vw;
+  /* outline: solid 1px yellow; */
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.setWrapper {
+  width: 80%;
+
+  /* outline: solid 1px red; */
+}
+.examples {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.example {
+  width: 100%;
+  /* outline: solid 1px red; */
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: fit-content;
+}
+
+.text {
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  color: inherit;
+  font-size: 1.25rem;
+  color: var(--secondary-color);
+}
+
+.clickText {
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  color: inherit;
+  font-size: 1rem;
+}
+
+.card {
+  border: none;
+  background-color: transparent;
+  width: 100%;
+  cursor: pointer;
+}
+
+.exampleWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}

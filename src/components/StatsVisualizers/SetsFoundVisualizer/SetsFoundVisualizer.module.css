@@ -1,0 +1,15 @@
+.score {
+  background-color: hsl(148, 60%, 66%);
+  width: 5px;
+  height: 5px;
+  border-radius: 20px;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: 60%;
+  gap: 4px;
+  margin-bottom: 10px;
+}

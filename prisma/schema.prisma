@@ -1,0 +1,45 @@
+generator client {
+  provider      = "prisma-client-js"
+  binaryTargets = ["native", "linux-musl-arm64-openssl-3.0.x", "linux-musl-openssl-3.0.x"]
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model UserStats {
+  id         Int    @id @default(autoincrement())
+  userId     String @unique
+  played     Int    @default(0)
+  lost       Int    @default(0)
+  draw       Int    @default(0)
+  found      Int    @default(0)
+  averageTTS Int    @default(0)
+}
+
+model Game {
+  id        Int        @id @default(autoincrement())
+  start     DateTime   @default(now()) @db.Timestamp(6)
+  end       DateTime   @db.Timestamp(6)
+  foundSets FoundSet[]
+  players   String[]
+}
+
+model Card {
+  id        Int        @id
+  number    String
+  color     String
+  shape     String
+  fill      String
+  foundSets FoundSet[]
+}
+
+model FoundSet {
+  id         Int    @id @default(autoincrement())
+  gameId     Int
+  userId     String
+  timeToFind Int
+  cards      Card[]
+  game       Game   @relation(fields: [gameId], references: [id])
+}

@@ -1,0 +1,86 @@
+.wrapper {
+  width: fit-content;
+  max-width: 380px;
+  display: flex;
+  top: 20%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  pointer-events: auto;
+}
+
+.emojigrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  user-select: none;
+  /* outline: solid 2px red; */
+}
+.selectedEmoji {
+  position: relative;
+  background-color: var(--emoji-field);
+  border-radius: 8px;
+  letter-spacing: 0.5rem;
+  font-size: 24px;
+  display: flex;
+  padding-top: 0.25em;
+  justify-content: center;
+  align-items: center;
+  width: max(80%, 200px);
+  height: 3rem;
+  border: solid 1px var(--border-color);
+  user-select: none;
+  margin-bottom: 10px;
+}
+
+.icon {
+  position: absolute;
+  right: 10px;
+  opacity: 0.5;
+  top: 20%;
+}
+
+.fieldEmoji {
+  cursor: pointer;
+  user-select: none;
+  text-shadow: rgba(255, 250, 196, 0.749) 0px 0px 15px,
+    rgba(254, 225, 0, 0.691) 0px 0px 4px, hsla(39, 86%, 55%, 0.947) 0px 0px 40px;
+}
+
+.text {
+  font-size: 1rem;
+  color: var(--font-color);
+  text-align: center;
+  user-select: none;
+}
+
+.emoji {
+  font-size: 48px;
+  opacity: 0.8;
+  transition: opacity, transform 0.15s ease-out;
+  border: none;
+  background-color: transparent;
+  display: inline-block;
+  border: none;
+  padding: 0 6px;
+  margin: 0;
+  padding-top: 6px;
+  margin-top: -8px;
+  text-decoration: none;
+  transition: text-shadow 0.25s ease;
+  overflow: visible;
+  /* outline: solid 1px yellow; */
+}
+
+.emoji:hover {
+  cursor: pointer;
+  text-shadow: rgba(255, 250, 196, 0.749) 0px 0px 15px,
+    rgba(254, 225, 0, 0.691) 0px 0px 4px, hsla(39, 86%, 55%, 0.947) 0px 0px 40px;
+  z-index: 10;
+}
+
+.buttonWrapper {
+  border: none;
+  background-color: transparent;
+}

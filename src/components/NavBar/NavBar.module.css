@@ -1,0 +1,80 @@
+.links {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+
+  align-items: center;
+}
+.wrapper {
+  display: flex;
+  align-items: center;
+  width: min(90%, 800px);
+  border: solid 1px var(--border-color);
+  background-color: var(--top-bar-color);
+  border-radius: 25px;
+  height: 44px;
+  pointer-events: auto;
+  margin-left: auto auto;
+}
+
+.navLayout {
+  width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  padding: 24px 0px;
+}
+
+.link {
+  list-style: none;
+  cursor: pointer;
+}
+
+.link:hover {
+  opacity: 80%;
+}
+
+.chosen {
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.chosen:hover {
+  opacity: 80%;
+}
+.Multiplayer {
+  background: -webkit-linear-gradient(
+    200deg,
+    var(--primary-color) 0%,
+
+    var(--secondary-color) 49%,
+
+    var(--tertiary-color) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+.Multiplayer:hover {
+  opacity: 80%;
+}
+
+.link button {
+  border: none;
+  outline: none;
+  color: inherit;
+  background-color: transparent;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  cursor: pointer;
+}
+
+.infoIcon:hover {
+  opacity: 80%;
+}
